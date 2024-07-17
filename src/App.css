@@ -1,0 +1,68 @@
+.circle-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 90vw;
+  max-width: 360px;
+  max-height: 360px;
+}
+
+.circle-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.progress-gradient {
+  background: linear-gradient(to right, #ffd000, #ff9500, #ff7b00);
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #d6d6d6, #ffee32, #ffd100, #202020, #333533);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 10s ease infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive font sizes */
+@media (max-width: 640px) {
+  .text-gradient {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .text-gradient {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .text-gradient {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text-gradient {
+    font-size: 4rem;
+  }
+}
