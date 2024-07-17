@@ -28,9 +28,9 @@ function App() {
   const [name, setName] = useState("Amir");
   const [levelIndex, setLevelIndex] = useState(6);
   const [isRobotRunning, setIsRobotRunning] = useState(false);
-  const [points, setPoints] = useState(1114682789);
-  const pointsToAdd = 1000000001;
-  const BotGainPerHour = 9000000000;
+  const [points, setPoints] = useState(10000000);
+  const pointsToAdd = 10000000;
+  const BotGainPerHour = 1150000000;
 
 
   return (
